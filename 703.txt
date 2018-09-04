@@ -1,0 +1,17 @@
+#1000以内的回数
+def is_palindrome(n):
+	s=str(n)
+	i=0
+	j=len(s)
+	while i<j/2:
+		if s[i]==s[j-1-i]:
+			i=i+1
+			return True
+		else:
+			return False
+		
+		
+		
+output=filter(is_palindrome,range(1,10000))
+print(list(output))
+		
